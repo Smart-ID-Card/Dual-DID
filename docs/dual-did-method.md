@@ -2,12 +2,14 @@
 
 ## Dual DID
 
+Dual DID is a decentralized identifier based on Ethereum. This specification defines Dual DID method name, specifc identifier, and CRUD operations, and describes security and privacy considerations.
+
 ### Dual DID Method Name
 The namestring which identifies this DID method is: `dual`.
 
 ### Dual DID Method Specific Identifier
 This DID consists of "did:dual:" + "network-id:" + "identifier", and conforms to the requirements specified in the [DID specification](https://w3c.github.io/did-core/) currently published by the W3C Credentials Community Group.
-`network-id` is the Ethereum chain id which is an identifier of the network. It is expressed in hexadecimal.
+network-id is a chain ID which is an identifier of Ethereum networks. It is expressed in hexadecimal.
 ```
 did:dual:0x420ada7:123456789abcdef123456789abcdef123456789abc
 ```
@@ -55,7 +57,7 @@ In order to delete the DID, Dual DID API is used.
 
 ## Security Considerations
 
-- Verifiable Credentials contain the holder's DID for non-repudiation
+- Verifiable Credentials contain the holder's DID for non-repudiation.
 - The entities managing their private key need to keep it in a secure area such as a Secure Element (SE) and a Hardware Security Module (HSM).
 
 ## Privacy Considerations
